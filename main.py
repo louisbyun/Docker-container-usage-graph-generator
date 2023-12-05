@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Read the CSV file
-df = pd.read_csv('docker_stats-without_any_refresh_20231201.csv', parse_dates=['Timestamp'])
+df = pd.read_csv('docker_stats.csv', parse_dates=['Timestamp'])
 
 # Plot graphs for CPU and Memory usage of Visualizer and EVAM
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
